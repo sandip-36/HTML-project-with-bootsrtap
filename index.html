@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="/">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav-otr">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="srch-bar">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search this blog">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bnr-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 my-auto">
+                    <div class="bnr-cntn">
+                        <h1>First I wanted to be
+                            a veterinarian</h1>
+                        <p>Lorem Ipsum available but the majority have
+                            suffered alteration in some form, by injected
+                            humour randomised words.</p>
+                        <div class="bnr-btn">
+                            <a href="#" class="btn btn-primary">Conatct us</a>
+                            <a href="#" class="btn btn-secondary">Our Service</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="bnr-img">
+                        <img src="./images/bnr-img.png" alt="/">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="veter-sec cmn-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <div class="vet-inr" data-aos="fade-right">
+                        <h3>As a veterinarian and
+                            lover of animals.</h3>
+                        <p>Lorem Ipsum available but the majoty
+                            suffered alteration in some form, by
+                            humour randomised words.</p>
+                        <div class="bnr-btn">
+                            <a href="#" class="btn btn-primary mn-btn">Our Service</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="vet-vdo" data-aos="fade-left">
+                        <video poster="images/vet-img.jpg" width="100%">
+                            <source src="images/SampleVideo_1280x720_10mb.mp4">
+                        </video>
+                        <div class="custom-controls">
+                            <button onclick="playPause()">Play/Pause</button>
+                            <input type="range" id="volume" name="volume" min="0" max="1" step="0.1"
+                                onchange="setVolume()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cmn-pd-yl vaccine-sec yl-back">
+        <div class="container">
+            <div class="cmn-hdr text-center" data-aos="fade-up">
+                <h2>Vacination Care</h2>
+                <p> Lorem Ipsum available, but the majority have
+                    suffered alteration in some form.</p>
+            </div>
+            <div class="row rw-otr">
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50">
+                        <div class="vac-img">
+                            <img src="./images/vter-img1.jpg" alt="/">
+                        </div>
+                        <h4>Veterinarian</h4>
+                        <p> Lorem Ipsum available, but
+                            the majority have suffered
+                            alteration in some.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100">
+                        <div class="vac-img">
+                            <img src="./images/vter-img2.jpg" alt="/">
+                        </div>
+                        <h4>Vaccination Care</h4>
+                        <p> Lorem Ipsum available, but
+                            the majority have suffered
+                            alteration in some.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="fade-down" data-aos-duration="1700" data-aos-delay="150">
+                        <div class="vac-img">
+                            <img src="./images/vter-img3.jpg" alt="/">
+                        </div>
+                        <h4>Dental Care</h4>
+                        <p> Lorem Ipsum available, but
+                            the majority have suffered
+                            alteration in some.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="veter-sec cmn-pad right-vet">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="vet-vdo" data-aos="fade-right">
+                        <video poster="images/vet-img2.jpg" width="100%">
+                            <source src="images/SampleVideo_1280x720_10mb.mp4">
+                        </video>
+                        <div class="custom-controls">
+                            <button onclick="playPause()">Play/Pause</button>
+                            <input type="range" id="volume" name="volume" min="0" max="1" step="0.1"
+                                onchange="setVolume()">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <div class="vet-inr" data-aos="fade-left">
+                        <h3>As a veterinarian and
+                            lover of animals.</h3>
+                        <p>Lorem Ipsum available but the majoty
+                            suffered alteration in some form, by
+                            humour randomised words.</p>
+                        <div class="bnr-btn">
+                            <a href="#" class="btn btn-primary mn-btn">Our Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cmn-pd-yl vaccine-sec yl-back">
+        <div class="container">
+            <div class="cmn-hdr text-center">
+                <h2>Selling Dogs</h2>
+                <p> Lorem Ipsum available, but the majority have
+                    suffered alteration in some form.</p>
+            </div>
+            <div class="row rw-otr">
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="fade-right">
+                        <div class="vac-img">
+                            <img src="./images/dog1.jpg" alt="/">
+                        </div>
+                        <h4><strike>$50</strike> $30</h4>
+                        <div class="bnr-btn">
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="fade-up">
+                        <div class="vac-img">
+                            <img src="./images/dog2.jpg" alt="/">
+                        </div>
+                        <h4><strike>$50</strike> $30</h4>
+                        <div class="bnr-btn">
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="fade-left">
+                        <div class="vac-img">
+                            <img src="./images/dog3.jpg" alt="/">
+                        </div>
+                        <h4><strike>$50</strike> $30</h4>
+                        <div class="bnr-btn">
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team cmn-pad">
+        <div class="container">
+            <div class="cmn-hdr blck text-center">
+                <h2>The vetcare team</h2>
+                <p> Lorem Ipsum available, but the majority have
+                    suffered alteration in some form.</p>
+            </div>
+            <div class="row rw-otr">
+                <div class="col-lg-4">
+                    <div class="vac-inr blck" data-aos="flip-left">
+                        <div class="vac-img">
+                            <img src="./images/doc1.jpg" alt="/">
+                        </div>
+                        <h4>Jennifer Mullen</h4>
+                        <p>VETERINARY</p>
+                        <div class="scl-otr">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="flip-up">
+                        <div class="vac-img">
+                            <img src="./images/doc2.jpg" alt="/">
+                        </div>
+                        <h4>Sheeren Collins</h4>
+                        <p>ADMINISTRATION</p>
+                        <div class="scl-otr">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vac-inr" data-aos="flip-left">
+                        <div class="vac-img">
+                            <img src="./images/doc3.jpg" alt="/">
+                        </div>
+                        <h4>Jennifer Mullen</h4>
+                        <p>VETERINARY</p>
+                        <div class="scl-otr">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="count-sec">
+        <div class="container">
+            <div class="count-otr">
+                <div class="count-inr text-center">
+                    <div class="cnt-icn">
+                        <img src="images/icon1.png" alt="">
+                    </div>
+                    <h6>+ <span class="counter">34793</span></h6>
+                    <h5>Happy Client</h5>
+                </div>
+                <div class="count-inr text-center">
+                    <div class="cnt-icn">
+                        <img src="images/icon2.png" alt="">
+                    </div>
+                    <h6>+ <span class="counter">45321</span></h6>
+                    <h5>Department</h5>
+                </div>
+                <div class="count-inr text-center">
+                    <div class="cnt-icn">
+                        <img src="images/icon3.png" alt="">
+                    </div>
+                    <h6>+ <span class="counter">54762</span></h6>
+                    <h5>Vaccinations</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="team cmn-pad">
+        <div class="container">
+            <div class="cmn-hdr blck text-center">
+                <h2>Recent Post</h2>
+                <p> Lorem Ipsum available, but the majority have
+                    suffered alteration in some form.</p>
+            </div>
+            <div class="row rw-otr">
+                <div class="col-lg-4">
+                    <div class="post-otr" data-aos="zoom-in-right">
+                        <div class="post-img">
+                            <img src="./images/post1.jpg" alt="">
+                        </div>
+                        <div class="post-txt">
+                            <h6>As a veterianarian and lover of animals</h6>
+                            <p><span>february 09, 2020</span></p>
+                            <p>Lorem Ipsum available, but the majo
+                                rity have suffered alteration in some words which look.</p>
+                            <a href="#" class="anch">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post-otr" data-aos="zoom-in">
+                        <div class="post-img">
+                            <img src="./images/post2.jpg" alt="">
+                        </div>
+                        <div class="post-txt">
+                            <h6>As a veterianarian and lover of animals</h6>
+                            <p><span>february 10, 2020</span></p>
+                            <p>Lorem Ipsum available, but the majo
+                                rity have suffered alteration in some words which look.</p>
+                            <a href="#" class="anch">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post-otr" data-aos="zoom-in-left">
+                        <div class="post-img">
+                            <img src="./images/post3.jpg" alt="">
+                        </div>
+                        <div class="post-txt">
+                            <h6>As a veterianarian and lover of animals</h6>
+                            <p><span>february 11, 2020</span></p>
+                            <p>Lorem Ipsum available, but the majo
+                                rity have suffered alteration in some words which look.</p>
+                            <a href="#" class="anch">Read More +</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cmn-ftr">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="ftr-inr">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Brand Guidelines</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="ftr-inr">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">How to Order</a></li>
+                            <li><a href="#">Our Product</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Promo</a></li>
+                            <li><a href="#">Payment Method</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ftr-inr nws-otr">
+                        <h4>Contact us</h4>
+                        <p>Lorem Ipsum available, but the majorit</p>
+                        <form action="" class="nws-srch">
+                            <input type="search">
+                            <button type="submit" class="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                        <div class="scl-otr">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var video = document.querySelector(".vet-vdo video");
+
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function setVolume() {
+            video.volume = document.getElementById("volume").value;
+        }
+
+        // Add event listener to the video to toggle controls
+        video.addEventListener("click", function () {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+
+
+
+    </script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+</body>
+
+</html>
